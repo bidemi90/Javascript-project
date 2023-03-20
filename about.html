@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        :root {
+            --bgcolor: rgb(35, 78, 112);
+            --textcolor: rgb(250, 248, 191);
+        }
+
+        body{
+            background-color: var(--textcolor);
+        }
+        nav{
+            color: var(--bgcolor);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--bgcolor);
+        }
+
+        .tadbar {
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .tadbar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--bgcolor);
+            color: var(--textcolor);
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .tadbar button:hover {
+            border: 2px solid var(--bgcolor);
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+        }
+
+        .logodiv {
+            margin-left: 10px;
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .logodiv p {
+
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section1 {
+            width: 100%;
+            /* height: 600px; */
+            background-color: red;
+            background-image: url(images/one.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: var(--textcolor);
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+
+        .section1 .bigspan {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            font-weight: bolder;
+
+            text-align: right;
+            margin: auto;
+            width: fit-content;
+            padding-top: 100px;
+        }
+
+        .section1 .smallspan {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            width: fit-content;
+            margin: auto;
+            display: block;
+        }
+
+        .pinsection1 {
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: var();
+            text-align: center;
+            text-shadow: 2px 3px 5px black;
+        }
+
+        .section2 {
+            background-color: var(--bgcolor);
+            padding: 50px;
+            text-align: center;
+            color: var(--textcolor);
+        }
+
+        .section2 h1 {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+
+        }
+
+        .section2 h1 b {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+
+        }
+
+        .section2 p {
+            margin: 10px;
+        }
+
+        .section2 button {
+            width: 200px;
+            height: 50px;
+            background-color: var(--bgcolor);
+            border: none;
+            font-weight: bold;
+            color: var(--textcolor);
+            transition: all linear .2s;
+        }
+
+
+        .section2 button:hover {
+            border: 2px solid var(--bgcolor);
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+        }
+
+
+       
+
+.aboutussectio{
+    background-color: var(--textcolor);
+    color: var(--bgcolor);
+}
+
+
+        
+
+
+
+
+        footer {
+            display: flex;
+            background-color: var(--bgcolor);
+            margin-top: 30px;
+        }
+
+        footer div {
+            width: 25%;
+            margin: 10px;
+            height: fit-content;
+            display: block;
+        }
+
+        footer div a {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--textcolor);
+            padding: 10px;
+            width: 100%;
+        }
+
+        footer div a:hover {
+            text-decoration: underline;
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+            transition: all linear .5s;
+        }
+
+        
+
+
+        .nav2 {
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav2 {
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+        }
+
+        .dropit {
+            position: relative;
+        }
+
+        .menubutfornav2 {
+            width: fit-content;
+            padding: 10px;
+            border: none;
+            color: var(--textcolor);
+            background-color: var(--bgcolor);
+
+        }
+        .dropit:hover .tadbar2 {
+            display: block;
+
+        }
+
+        .tadbar2 {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            padding: 20px;
+            height: fit-content;
+            background-color: var(--bgcolor);
+            position: absolute;
+            right: 100%;
+            top: 0;
+            display: none;
+
+        }
+
+        .tadbar2 button {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid var(--bgcolor);
+            font-weight: bold;
+            text-transform: capitalize;
+            margin: 5px;
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+        }
+
+        .tadbar2 button:hover {
+            border: 2px solid var(--textcolor);
+            background-color: var(--bgcolor);
+            color: var(--textcolor);
+        }
+
+        @media only screen and (max-width: 900px) {
+            footer {
+                flex-direction: column;
+            }
+
+            footer div {
+                width: 100%;
+            }
+            .nav1{
+                display: none;
+            }
+            .nav2{
+                display: block;
+                display: flex;
+            }
+
+
+            .onethatwillbeinonescroll {
+            display: flex;
+            flex-direction: column;
+            position: unset;
+            height: unset;
+        }
+
+        .theimgofonethatwillbeinonescroll {
+            width: 100%;
+            align-items: unset;
+            height: auto;
+            /* height: 50%; */
+        }
+
+        .thedivofitonethatwillbeinonescroll {
+            width: 100%;
+            position: unset;
+           height: fit-content;
+        }
+
+        .thedivofitonethatwillbeinonescroll p:nth-child(1) {
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+
+        .thedivofitonethatwillbeinonescroll button {
+            background-color: var(--textcolor);
+            border: none;
+width: 200px;
+            color: var(--bgcolor);
+            padding: 10px;
+        }
+
+
+        }
+
+        nav a{
+        color: unset;
+        text-decoration: unset;
+    }
+    h4,h3,h1{
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    p{
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 1100px) {
+            .nav1{
+                display: none;
+            }
+            .nav2{
+                display: block;
+                display: flex;
+            }
+        }
+        .logodiv img{
+  max-width: 100px;
+  max-height: 100px;
+
+}
+    </style>
+
+</head>
+
+<body>
+    
+    <nav class="nav2">
+        <div class="logodiv">
+            <img src="images/logo.png" alt="">
+            <p>JOURNEY
+            </p>
+        </div>
+        <div class="dropit">
+            <button class="menubutfornav2">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <div class="tadbar2">
+                <button><a href="index.html">home</a></button>
+                <button><a href="#sectionholdingallplace">top destination</a></button>
+                <button>study process</button>
+                <button><a href="request.html">My request</a></button>
+                <button><a href="contactus.html">contact us</a></button>
+                <button><a href="about.html">About us</a></button>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav1">
+        <div class="logodiv">
+            <img src="images/logo.png" alt="">
+            <p>JOURNEY
+            </p>
+        </div>
+        <div class="tadbar">
+            <button><a href="index.html">home</a></button>
+            <button><a href="#sectionholdingallplace">top destination</a></button>
+            <button>study process</button>
+            <button><a href="request.html">My request</a></button>
+            <button><a href="contactus.html">contact us</a></button>
+            <button><a href="about.html">About us</a></button>
+        </div>
+    </nav>
+
+    <section class="section1">
+        <span class="bigspan">
+            BEST IN <br>
+            TRAVEL
+        </span>
+        <span class="smallspan">
+            2023
+        </span>
+        <p class="pinsection1">The results are in! Explore this year's expert-approved list of must-see destinations,
+            places, and
+            unforgettable experiences guaranteed to inspire.</p>
+    </section>
+
+   
+
+ <section class="aboutussectio">
+
+    <h1>
+        What we do
+    </h1>
+    <h3>
+        Educational Services
+    </h3>
+    <h4>
+        Study abroad with someone who knows the way.
+    </h4>
+    <p>
+        JOURNEY is a global leader in international educational services. We’ve been in the industry for close to 50 years and know the best practices to help you realise your dream of studying abroad. Our range of services, experienced staff and foothold in the industry ensures that your international future is bright and rewarding.
+    </p>
+    <p>
+        Our wealth of knowledge and years of experience speak to our success, and these are used to the advantage of our clients. Our affiliation with universities, colleges, and secondary schools also gives us the edge required to process applications without a glitch. Our success rate speaks volume of our effective and efficient services rendered. With us, your dream is a reality!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quo qui, quam doloremque minima reiciendis similique sint. Deleniti, molestias animi mollitia odit pariatur optio quibusdam tenetur maiores eos provident enim?
+    </p>
+    <h4>
+        Who do we work with?
+    </h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vitae nesciunt eum voluptates tempora rem natus culpa corrupti voluptatem magni. Iure dicta dolorum, eum eius ipsam error nostrum nemo impedit?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vitae nesciunt eum voluptates tempora rem natus culpa corrupti voluptatem magni. Iure dicta dolorum, eum eius ipsam error nostrum nemo impedit?
+    </p>
+    <h4>
+        How do we make money?
+    </h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos illum ea, non possimus excepturi placeat. Quae commodi sit odio recusandae molestias quasi ratione sunt officia? Molestias tempora repellendus quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dignissimos illum ea, non possimus excepturi placeat. Quae commodi sit odio recusandae molestias quasi ratione sunt officia? Molestias tempora repellendus quidem.
+    </p>
+    <h4>
+        Prices
+    </h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, qui. Modi corrupti quae atque saepe, totam voluptate suscipit accusantium illo facilis vel delectus. Qui ab minus repellat earum ea omnis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, qui. Modi corrupti quae atque saepe, totam voluptate suscipit accusantium illo facilis vel delectus. Qui ab minus repellat earum ea omnis.
+    </p>
+
+ </section>
+
+
+    <footer class="">
+        <div>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <a href="">Cities</a>
+            <a href="">Hotels</a>
+            <a href="">Places of interest</a>
+        </div>
+        <div>
+            <a href=""> Unique places to stay</a>
+            <a href="">Guest houses</a>
+            <a href="">All destinations</a>
+            <a href="">Hotels</a>
+            <a href="">Places of interest</a>
+        </div>
+        <div>
+            <a href="">Countries</a>
+            <a href="">Regions</a>
+            <a href="">Cities</a>
+            <a href="">Discover</a>
+            <a href="">Restaurant reservations</a>
+        </div>
+        <div>
+            <a href="">Coronavirus (COVID-19) FAQs</a>
+            <a href="">Press Center</a>
+            <a href="">Corporate contact</a>
+            <a href="">Customer Service Help</a>
+            <a href="">Privacy & cookie statement</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+

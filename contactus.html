@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        :root {
+            --bgcolor: rgb(35, 78, 112);
+            --textcolor: rgb(250, 248, 191);
+        }
+
+        body{
+            background-color: var(--textcolor);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav1 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--bgcolor);
+        }
+        nav{
+            color: var(--bgcolor);
+        }
+
+        .tadbar {
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .tadbar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--bgcolor);
+            color: var(--textcolor);
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        .tadbar button:hover {
+            border: 2px solid var(--bgcolor);
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+        }
+
+        .logodiv {
+            margin-left: 10px;
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .logodiv p {
+
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section1 {
+            width: 100%;
+            /* height: 600px; */
+            background-color: red;
+            background-image: url(images/one.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: var(--textcolor);
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+
+        .section1 .bigspan {
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: block;
+            font-weight: bolder;
+
+            text-align: right;
+            margin: auto;
+            width: fit-content;
+            padding-top: 100px;
+        }
+
+        .section1 .smallspan {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            width: fit-content;
+            margin: auto;
+            display: block;
+        }
+
+        .pinsection1 {
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: var();
+            text-align: center;
+            text-shadow: 2px 3px 5px black;
+        }
+
+        .section2 {
+            background-color: rgb(239, 239, 239);
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section2 h1 {
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+
+        }
+
+        .section2 h1 b {
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+
+        }
+
+        .section2 p {
+            margin: 10px;
+        }
+
+        .section2 button {
+            width: 200px;
+            height: 50px;
+            background-color: var(--bgcolor);
+            border: none;
+            font-weight: bold;
+            color: var(--textcolor);
+            transition: all linear .2s;
+        }
+
+
+        .section2 button:hover {
+            border: 2px solid var(--bgcolor);
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+        }
+
+
+
+
+
+        footer {
+            display: flex;
+            background-color: var(--bgcolor);
+            margin-top: 30px;
+        }
+
+        footer div {
+            width: 25%;
+            margin: 10px;
+            height: fit-content;
+            display: block;
+        }
+
+        footer div a {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--textcolor);
+            padding: 10px;
+            width: 100%;
+        }
+
+        footer div a:hover {
+            text-decoration: underline;
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+            transition: all linear .5s;
+        }
+
+
+
+
+        .nav2 {
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav2 {
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: none;
+        }
+
+        .dropit {
+            position: relative;
+        }
+
+        .menubutfornav2 {
+            width: fit-content;
+            padding: 10px;
+            border: none;
+            color: var(--textcolor);
+            background-color: var(--bgcolor);
+
+        }
+
+        .dropit:hover .tadbar2 {
+            display: block;
+
+        }
+
+        .tadbar2 {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            padding: 20px;
+            height: fit-content;
+            background-color: var(--bgcolor);
+            position: absolute;
+            right: 100%;
+            top: 0;
+            display: none;
+
+        }
+
+        .tadbar2 button {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid var(--bgcolor);
+            font-weight: bold;
+            text-transform: capitalize;
+            margin: 5px;
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+        }
+
+        .tadbar2 button:hover {
+            border: 2px solid var(--textcolor);
+            background-color: var(--bgcolor);
+            color: var(--textcolor);
+        }
+
+        @media only screen and (max-width: 900px) {
+            footer {
+                flex-direction: column;
+            }
+
+            footer div {
+                width: 100%;
+            }
+
+            .nav1 {
+                display: none;
+            }
+
+            .nav2 {
+                display: block;
+                display: flex;
+            }
+
+
+            .onethatwillbeinonescroll {
+                display: flex;
+                flex-direction: column;
+                position: unset;
+                height: unset;
+            }
+
+            .theimgofonethatwillbeinonescroll {
+                width: 100%;
+                align-items: unset;
+                height: auto;
+                /* height: 50%; */
+            }
+
+            .thedivofitonethatwillbeinonescroll {
+                width: 100%;
+                position: unset;
+                height: fit-content;
+            }
+
+            .thedivofitonethatwillbeinonescroll p:nth-child(1) {
+                font-size: 20px;
+                font-weight: bolder;
+                text-transform: capitalize;
+            }
+
+            .thedivofitonethatwillbeinonescroll button {
+                background-color: var(--textcolor);
+                border: none;
+                width: 200px;
+                color: var(--bgcolor);
+                padding: 10px;
+            }
+
+
+        }
+
+        nav a {
+            color: unset;
+            text-decoration: unset;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .nav1 {
+                display: none;
+            }
+
+            .nav2 {
+                display: block;
+                display: flex;
+            }
+        }
+
+        #gfgg {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        #gfgg div {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: var(--textcolor);
+            border: 2px solid var(--bgcolor);
+            border-radius: 10px;
+            margin: 10px;
+            color: var(--bgcolor);
+            transition: all linear 0.5;
+           
+        }
+        #gfgg div:hover{
+            transform: scale(1.1);
+           
+        }
+        .aboutussectio{
+            background-color: var(--bgcolor);
+            color: var(--textcolor);
+            padding: 20px;
+        }
+
+        #gfgg div span {
+            width: 50%;
+            height: 100px;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--bgcolor);
+
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: capitalize;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: center;
+
+        }
+
+        .iframecfghj {
+            width: 80%;
+            margin: auto;
+            height: 400px;
+        }
+
+        #bigitit {
+            width: 80%;
+            height: fit-content;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* CSS */
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--bgcolor);
+            border-radius: 10px;
+            color: var(--textcolor);
+        }
+
+        .feedback-form__title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .feedback-form__group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .feedback-form__label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .feedback-form__input,
+        .feedback-form__textarea {
+            padding: 10px;
+            border: 1px solid var(--textcolor);
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            background-color: var(--textcolor);
+        }
+
+        .feedback-form__button {
+            background-color: var(--textcolor);
+            color: var(--bgcolor);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .logodiv img{
+  max-width: 100px;
+  max-height: 100px;
+
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="nav2">
+        <div class="logodiv">
+            <img src="images/logo.png" alt="">
+            <p>JOURNEY
+            </p>
+        </div>
+        <div class="dropit">
+            <button class="menubutfornav2">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <div class="tadbar2">
+                <button><a href="index.html">home</a></button>
+                <button><a href="#sectionholdingallplace">top destination</a></button>
+                <button>study process</button>
+                <button><a href="request.html">My request</a></button>
+                <button><a href="contactus.html">contact us</a></button>
+                <button><a href="about.html">About us</a></button>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav1">
+        <div class="logodiv">
+            <img src="images/logo.png" alt="">
+            <p>JOURNEY
+            </p>
+        </div>
+        <div class="tadbar">
+            <button><a href="index.html">home</a></button>
+            <button><a href="#sectionholdingallplace">top destination</a></button>
+            <button>study process</button>
+            <button><a href="request.html">My request</a></button>
+            <button><a href="contactus.html">contact us</a></button>
+            <button><a href="about.html">About us</a></button>
+        </div>
+    </nav>
+
+    <section class="section1">
+        <span class="bigspan">
+            BEST IN <br>
+            TRAVEL
+        </span>
+        <span class="smallspan">
+            2023
+        </span>
+        <p class="pinsection1">The results are in! Explore this year's expert-approved list of must-see destinations,
+            places, and
+            unforgettable experiences guaranteed to inspire.</p>
+    </section>
+
+
+
+    <section class="aboutussectio">
+        <h1>
+            Contact Us
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic consequuntur modi, soluta nulla corporis
+            laboriosam sequi exercitationem eos vitae optio provident amet repudiandae cum placeat quibusdam
+            repellendus? Necessitatibus, neque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic consequuntur modi, soluta nulla corporis
+            laboriosam sequi exercitationem eos vitae optio provident amet repudiandae cum placeat quibusdam
+            repellendus? Necessitatibus, neque.
+        </p>
+        <div  id="gfgg">
+            <div >
+                <span class="material-symbols-outlined">
+                    pin_drop
+                </span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ullam? Tempore repellat itaque
+                deserunt vel voluptatum soluta ipsa, eligendi, id dolores aut expedita laboriosam architecto quaerat sed!
+                Praesentium, blanditiis maxime.
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A molestiae aperiam at repellendus atque
+                    doloribus in eaque enim iusto. Quis perferendis aliquam vel totam dignissimos enim similique, dolorem
+                    odio consequuntur.</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit molestiae aperiam reprehenderit tempore
+                    quae. Ipsam soluta tenetur modi sed est, obcaecati quibusdam debitis autem sunt voluptas ipsum corporis
+                    vero sequi.</p>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">
+                    schedule
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit molestiae aperiam reprehenderit tempore
+                    quae. Ipsam soluta tenetur modi sed est, obcaecati quibusdam debitis autem sunt voluptas ipsum corporis
+                    vero sequi.</p>
+            </div>
+        </div>
+
+        <aside id="bigitit">
+
+
+
+            <iframe class="iframecfghj"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.4454497310908!2d3.879142907839849!3d7.387536400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d0e6aaaaaab%3A0xceeb94061265aea4!2sShoprite!5e1!3m2!1sen!2sng!4v1678366894288!5m2!1sen!2sng"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </aside>
+    </section>
+    <section class="feedback-form">
+        <h3 class="feedback-form__title">Feedback Form</h3>
+        <div class="feedback-form__group">
+            <label for="name" class="feedback-form__label">Name</label>
+            <input type="text" placeholder="Name" id="name" class="feedback-form__input">
+        </div>
+        <div class="feedback-form__group">
+            <label for="email" class="feedback-form__label">Email</label>
+            <input type="email" placeholder="Email" id="email" class="feedback-form__input">
+        </div>
+        <div class="feedback-form__group">
+            <label for="phone" class="feedback-form__label">Phone</label>
+            <input type="tel" placeholder="Phone" id="phone" class="feedback-form__input">
+        </div>
+        <div class="feedback-form__group">
+            <label for="message" class="feedback-form__label">Message</label>
+            <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" class="feedback-form__textarea"></textarea>
+        </div>
+    <button class="feedback-form__button">Submit</button>
+     </section>
+
+
+    <footer class="">
+        <div>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <a href="">Cities</a>
+            <a href="">Hotels</a>
+            <a href="">Places of interest</a>
+        </div>
+        <div>
+            <a href=""> Unique places to stay</a>
+            <a href="">Guest houses</a>
+            <a href="">All destinations</a>
+            <a href="">Hotels</a>
+            <a href="">Places of interest</a>
+        </div>
+        <div>
+            <a href="">Countries</a>
+            <a href="">Regions</a>
+            <a href="">Cities</a>
+            <a href="">Discover</a>
+            <a href="">Restaurant reservations</a>
+        </div>
+        <div>
+            <a href="">Coronavirus (COVID-19) FAQs</a>
+            <a href="">Press Center</a>
+            <a href="">Corporate contact</a>
+            <a href="">Customer Service Help</a>
+            <a href="">Privacy & cookie statement</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --colorone: rgb(35, 78, 112);
+    --colortwo: rgb(250, 248, 191);
+}
+
+body {
+    background-color: var(--colortwo);
+}
+
+.sectionone {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--colorone);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sectionone div {
+
+    width: 30%;
+    height: 300px;
+    background-color: var(--colortwo);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.sectionone div img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+nav {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav button {
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--colorone);
+    color: var(--colortwo);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 1px solid var(--colorone);
+}
+
+nav button:hover {
+
+    border: 2px solid var(--colorone);
+    background-color: var(--colortwo);
+    color: var(--colorone);
+
+}
+
+.travel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.onelocation {
+    width: 400px;
+    /* height: fit-content; */
+    padding: 10px;
+    background-color: var(--colorone);
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+
+.imgforonelocation {
+    width: 100%;
+    background-color: var(--colortwo);
+}
+
+.imgforonelocation img {
+    width: 100%;
+    height: 100%;
+}
+
+.middeltext {
+    background-color: var(--colorone);
+    border: 2px solid var(--colortwo);
+    color: var(--colortwo);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.middeltext .nameinmiddel {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.priceinone {
+    font-weight: bold;
+    margin: 5px;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+    border: 2px solid var(--colortwo);
+}
+
+.addtolistbut {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    border: 2px var(--colorone) solid;
+    background-color: var(--colortwo);
+    color: var(--colorone);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.addtolistbut:hover {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    border: none;
+    color: var(--colortwo);
+    background-color: var(--colorone);
+
+}
+
+.addtolist {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.addtolist div:nth-child(1) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.addtolist div:nth-child(1) button {
+    width: 40%;
+    height: fit-content;
+    padding: 10px 5px;
+    background-color: var(--colorone);
+    color: var(--colortwo);
+    font-weight: bolder;
+    border: none;
+}
+
+.addtolist div:nth-child(1) button:hover {
+    border: 2px solid var(--colorone);
+    background-color: var(--colortwo);
+    color: var(--colorone);
+    font-weight: bolder;
+}
+
+.addtolist div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.addtolist div:nth-child(2) select {
+    /* width: 100%; */
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid var(--colorone);
+    margin-bottom: 10px;
+    color: var(--colorone);
+    outline: none;
+}
+
+.addtolist div:nth-child(2) select::placeholder {
+    color: var(--colorone);
+    font-weight: bold;
+}
+
+.addtolist div:nth-child(2) input {
+    /* width: 100%; */
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid var(--colorone);
+    margin-bottom: 10px;
+    color: var(--colorone);
+}
+
+.addtolist div:nth-child(2) input::placeholder {
+    color: var(--colorone);
+    font-weight: bold;
+}
+
+.image-preview-container {
+    width: 80%;
+    height: 400px;
+    border: 2px solid var(--colorone);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-preview-container img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-container button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--colorone);
+    border: none;
+    color: var(--colortwo);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.upload-container button:hover {
+    background-color: var(--colortwo);
+    border: 2px solid var(--colorone);
+    color: var(--colorone);
+}
+
+.disandprice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.disandprice textarea {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--colorone);
+    font-size: 20px;
+    outline: none;
+    color: var(--colorone);
+
+}
+
+.disandprice textarea::placeholder {
+    color: var(--colorone);
+    font-size: 20px;
+}
+
+.disandprice input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: 2px solid var(--colorone);
+    font-size: 20px;
+    outline: none;
+    color: var(--colorone);
+
+}
+
+.disandprice input::placeholder {
+    color: var(--colorone);
+    font-size: 20px;
+}
+
+.submittravel {
+    width: 200px;
+    height: 50px;
+    background-color: var(--colorone);
+    border: none;
+    color: var(--colortwo);
+    font-weight: bold;
+    font-size: 15px;
+
+    margin: 10px;
+}
+
+.submittravel:hover {
+    background-color: var(--colortwo);
+    border: 2px solid var(--colorone);
+    color: var(--colorone);
+}
+
+
+
+.course {
+    padding: 20px;
+    height: fit-content;
+    background-color: var(--colortwo);
+    color: var(--colorone);
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.course li {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.editbut {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: var(--colortwo);
+    color: var(--colorone);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dlebut {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background-color: var(--colortwo);
+    color: var(--colorone);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.editbut:hover {
+    background-color: var(--colorone);
+    color: white;
+    border: 2px solid var(--colortwo);
+}
+
+.dlebut:hover {
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav button {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .sectionone {
+        flex-direction: column;
+    }
+
+    .sectionone div {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .onelocation {
+        width: 200px;
+        height: fit-content;
+        padding: 10px;
+        background-color: var(--colorone);
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+
+.thenamingsection {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+    color: var(--colorone);
+
+}
+
+#thenamingsection div p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.checkonetravel {
+    background-color: var(--colorone);
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--colortwo);
+    margin: 10px;
+}
+
+.checkonetravel p {
+    margin: 10px;
+}
+
+.checkonetravel b {
+
+    background-color: var(--colortwo);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--colorone);
+
+}
+
+
+
+#asideee {
+    width: 600px;
+    height: fit-content;
+    padding: 10px;
+    border: 2px solid var(--colorone);
+    color: var(--colorone);
+}
+
+#asideee div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#asideee div label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#asideee div label input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid var(--colorone);
+    border-radius: 5px;
+}
+
+#asideee .verbutforoneuser {
+    width: 100px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    background-color: var(--colorone);
+    color: var(--colortwo);
+    border: none;
+}
+
+.ysdfugsegf button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
