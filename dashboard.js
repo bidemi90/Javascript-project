@@ -659,7 +659,7 @@
 
 
         document.getElementById("travel").innerHTML = ""
-        document.getElementById("travel").innerHTML = `<div>
+        document.getElementById("travel").innerHTML = `<div class="rrrrrr">
             <button onclick="applicants()">travel request</button><button onclick="aaaaa()">study request</button>
             </div>`
 
@@ -694,7 +694,7 @@
         document.getElementById("travel").style.display = "block"
         allschool
         document.getElementById("travel").innerHTML = ""
-        document.getElementById("travel").innerHTML = `<div>
+        document.getElementById("travel").innerHTML = `<div class="rrrrrr">
             <button onclick="applicants()">travel request</button><button onclick="aaaaa()">study request</button>
             </div>`
         if (allschool.length == 0) {
@@ -854,7 +854,7 @@
 
 
         document.getElementById("travel").innerHTML = ""
-        document.getElementById("travel").innerHTML += `<div>
+        document.getElementById("travel").innerHTML += `<div class="rrrrrr">
             <button onclick="Processed()">travel</button><button onclick="bbbbbb()">study</button>
             </div>`
 
@@ -889,7 +889,7 @@
 
 
         document.getElementById("travel").innerHTML = ""
-        document.getElementById("travel").innerHTML += `<div>
+        document.getElementById("travel").innerHTML += `<div class="rrrrrr">
             <button onclick="Processed()">travel</button><button onclick="bbbbbb()">study</button>
             </div>`
 
